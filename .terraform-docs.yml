@@ -1,0 +1,59 @@
+---
+# see: https://terraform-docs.io/user-guide/configuration/#version
+# version: ">= 0.10, < 0.12"
+
+# see: https://terraform-docs.io/user-guide/configuration/#formatters
+formatter: markdown table
+
+header-from: main.tf
+# recursive:
+#   enabled: false
+#   path: resources
+# footer-from: footer.md
+
+# see: https://terraform-docs.io/user-guide/configuration/#sections
+sections:
+  show:
+    - header
+    - inputs
+    - outputs
+    - providers
+    - modules
+    - footer
+    - resources
+    - requirements
+
+content: |-
+  {{ .Header }}
+  {{ .Requirements }}
+  {{ .Providers }}
+  {{ .Modules }}
+  {{ .Resources }}
+  {{ .Inputs }}
+  {{ .Outputs }}
+
+  ### Example
+  ```hcl
+  {{ include "examples/foo/main.tf" }}
+  ```
+  {{ .Footer }}
+
+output:
+  file: README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  indent: 4
+  escape: false
+  default: true
+  required: true
+  type: true
+  description: true
