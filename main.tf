@@ -8,7 +8,7 @@ module "azurerm_resourcegroup" {
 
 resource "azurerm_management_lock" "lock" {
   name       = var.lock_name
-  scope      = module.azurerm_resourcegroup_version.id
+  scope      = module.azurerm_resourcegroup.id
   lock_level = var.lock_level
   notes      = var.lock_notes
 }
