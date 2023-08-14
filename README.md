@@ -25,7 +25,7 @@ Creates an Azure resource group given a name, location and tags (optional). If w
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_azurerm_resourcegroup_version2"></a> [azurerm_resourcegroup_version2](#module_azurerm_resourcegroup_version2) | github.com/rmsmatos/terraform_azurerm_resourcegroup_version2 | n/a |
+| <a name="module_azurerm_resourcegroup"></a> [azurerm_resourcegroup](#module_azurerm_resourcegroup) | github.com/rmsmatos/terraform_azurerm_resourcegroup_version2 | n/a |
 #### Resources
 
 | Name | Type |
