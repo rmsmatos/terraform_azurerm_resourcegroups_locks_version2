@@ -25,7 +25,7 @@ Creates an Azure resource group given a name, location and tags (optional). If w
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_azurerm_resourcegroup_version1"></a> [azurerm_resourcegroup_version1](#module_azurerm_resourcegroup_version1) | github.com/rmsmatos/terraform_azurerm_resourcegroup_version1 | n/a |
+| <a name="module_azurerm_resourcegroup_version2"></a> [azurerm_resourcegroup_version2](#module_azurerm_resourcegroup_version2) | github.com/rmsmatos/terraform_azurerm_resourcegroup_version2 | n/a |
 #### Resources
 
 | Name | Type |
@@ -63,8 +63,8 @@ terraform {
   required_version = ">= 1.5"
 }
 
-module "terraform_azurerm_resourcegroups_lock_version1" {
-  source     = "github.com/rmsmatos/terraform_azurerm_resourcegroups_lock_version1"
+module "terraform_azurerm_resourcegroups_lock_version2" {
+  source     = "github.com/rmsmatos/terraform_azurerm_resourcegroups_lock_version2"
   name       = "just-a-test"
   location   = "westeurope"
   managed_by = "00000000-0000-0000-0000-00000000000"

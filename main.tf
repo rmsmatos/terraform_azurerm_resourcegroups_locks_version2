@@ -1,5 +1,5 @@
-module "azurerm_resourcegroup_version1" {
-  source     = "github.com/rmsmatos/terraform_azurerm_resourcegroup_version1"
+module "azurerm_resourcegroup_version2" {
+  source     = "github.com/rmsmatos/terraform_azurerm_resourcegroup_version2"
   name       = var.name
   location   = var.location
   managed_by = var.managed_by
