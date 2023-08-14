@@ -17,37 +17,37 @@ module "terraform_azurerm_resourcegroups_lock_version2" {
 }
 
 output "id" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.location
+  value = module.terraform_azurerm_resourcegroups_lock_version2.location
 }
 
 output "name" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.name
+  value = module.terraform_azurerm_resourcegroups_lock_version2.name
 }
 
 output "tags" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.tags
+  value = module.terraform_azurerm_resourcegroups_lock_version2.tags
 }
 
 output "managed_by" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.managed_by
+  value = module.terraform_azurerm_resourcegroups_lock_version2.managed_by
 }
 
 output "lock_id" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_id
+  value = module.terraform_azurerm_resourcegroups_lock_version2.lock_id
 }
 
 output "lock_name" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_name
+  value = module.terraform_azurerm_resourcegroups_lock_version2.lock_name
 }
 
 output "lock_scope" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_scope
+  value = module.terraform_azurerm_resourcegroups_lock_version2.lock_scope
 }
 
 output "lock_level" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_level
+  value = module.terraform_azurerm_resourcegroups_lock_version2.lock_level
 }
 
 output "lock_notes" {
-  value = module.terraform_azurerm_resourcegroups_lock_version1.lock_notes
+  value = module.terraform_azurerm_resourcegroups_lock_version2.lock_notes
 }
