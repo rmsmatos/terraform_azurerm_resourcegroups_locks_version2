@@ -17,6 +17,10 @@ module "terraform_azurerm_resourcegroups_lock_version2" {
 }
 
 output "id" {
+  value = module.terraform_azurerm_resourcegroups_lock_version2.id
+}
+
+output "location" {
   value = module.terraform_azurerm_resourcegroups_lock_version2.location
 }
 
